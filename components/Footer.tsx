@@ -9,15 +9,9 @@ export default function Footer() {
     <>
      <div className="w-full h-px bg-gray-200/40 p-0.4"></div>
     <footer className="bg-[#050D0B] text-gray-300 py-16 px-4">
-     
-
+    
       <div className="max-w-7xl mx-auto">
-
-        {/* TOP SECTION — LEFT LOGO + RIGHT LINKS */}
-        {/* TOP SECTION — LEFT IMAGE + RIGHT 3 COLUMNS */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
-
-          {/* LEFT SIDE — LOGO (separate) */}
           <div className="md:w-1/4 flex justify-start">
             <Image
               src="/logo.jpg"
@@ -28,10 +22,8 @@ export default function Footer() {
             />
           </div>
 
-          {/* RIGHT SIDE — 3 COLUMNS */}
           <div className="md:w-2/4 grid grid-cols-1 sm:grid-cols-3 gap-8">
 
-            {/* COMPANY */}
             <div>
               <h3 className="text-white font-semibold mb-4 tracking-wide text-sm">COMPANY</h3>
               <ul className="space-y-2 text-sm">
