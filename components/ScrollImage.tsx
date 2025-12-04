@@ -6,17 +6,17 @@ export default function ScrollImage() {
     {
       title: "Global Freedom",
       desc: "Live, travel, and operate anywhere with one seamless platform. Access the multi-network funding suite to manage your balance through bank transfers or supported stablecoins, hold USD funds securely, and use them effortlessly across 200+ countries. You can view all supported assets directly in the app.",
-      img: "/card1.jpg",
+      img: "/Global-Freedom.png",
     },
     {
       title: "Winity Loyalty",
       desc: "Every purchase earns Winity Points through Winity Loyalty, transforming your daily spend into meaningful lifestyle experiences. Whether it's exclusive travel, curated global partnerships, or premium gift card access, Winity Points bring you closer to the moments that matter, effortlessly.",
-      img: "/card2.jpg",
+      img: "/Winity-Loyalty.png",
     },
     {
       title: "Connected Lifestyle",
       desc: "Enjoy 24/7 member support on WhatsApp, premium benefits through Member Services, and seamless access across the entire Winity Life ecosystem. Whether you're at home or traveling the world, Winity Life stays effortlessly in sync with the way you live.",
-      img: "/card3.jpg",
+      img: "/ConnectedLifestyle.png",
     },
   ];
 
