@@ -45,56 +45,92 @@ export default function Hero() {
       </section>
 
       {/* MOBILE SECTION — CENTERED + VIDEO HIDDEN */}
-      <section className="
-        md:hidden 
-        relative 
-        w-full 
-        h-[100vh] 
-        flex 
-        flex-col 
-        justify-center 
-        items-center 
-        text-center 
-        px-6 
-        text-white
-      ">
+      {/* MOBILE SECTION — CENTERED + IMAGE + OVERLAY */}
+<section
+  className="
+    md:hidden
+    relative
+    w-full
+    min-h-[100vh]
+    flex
+    flex-col
+    justify-start
+    items-center
+    text-center
+    pt-20
+    px-6
+    text-white
+  "
+>
 
-        {/* Same desktop gradient but subtle */}
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1614_0%,#0f2e2a_70%,#123b36_100%)] opacity-90 -z-10"></div>
+  {/* Background gradient */}
+  <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1614_0%,#0f2e2a_70%,#123b36_100%)] opacity-95 -z-10"></div>
 
-        {/* NO VIDEO IN MOBILE */}
+  {/* TEXT BLOCK */}
+  <h1 className="text-3xl font-bold leading-snug mt-4">
+    Many ways to Move,<br />One way to Pay
+  </h1>
 
-        <h1 className="text-4xl font-bold leading-tight">
-          Many ways to Move,<br />One way to Pay
-        </h1>
+  <p className="mt-5 font-medium text-base text-gray-300 leading-snug max-w-md">
+  Your lifestyle, powered by Winity Life - the platform that connects traditional 
+  and emerging payments through a multi-network system. Move your money your way, 
+  spend globally in USD, and earn Winity Points with every tap - all through one
+   seamless experience.
+  </p>
 
-        <p className="mt-4 text-lg text-gray-300 max-w-md leading-tight">
-          Your lifestyle, powered by Winity Life – the platform that connects
-          traditional and emerging payments through a multi-network system.
-        </p>
+  {/* APP STORE BUTTONS */}
+  <div className="flex items-center justify-center gap-4 mt-8">
+    <Link href="https://apps.apple.com/us/app/winity-life/id6752761057" target="_blank">
+      <Image
+        src="/App-store.svg"
+        width={120}
+        height={36}
+        alt="App Store"
+        className="cursor-pointer rounded-lg hover:scale-105 transition"
+      />
+    </Link>
 
-        <div className="flex items-center justify-center gap-4 mt-8">
-          <Link href="https://apps.apple.com/us/app/winity-life/id6752761057" target="_blank">
-            <Image
-              src="/App-store.svg"
-              width={140}
-              height={40}
-              alt="App Store"
-              className="cursor-pointer rounded-lg hover:scale-105 transition"
-            />
-          </Link>
+    <Link href="https://play.google.com/store/apps/details?id=com.winity.life" target="_blank">
+      <Image
+        src="/Google-play.svg"
+        width={120}
+        height={36}
+        alt="Google Play"
+        className="cursor-pointer rounded-lg hover:scale-105 transition"
+      />
+    </Link>
+  </div>
 
-          <Link href="https://play.google.com/store/apps/details?id=com.winity.life" target="_blank">
-            <Image
-              src="/Google-play.svg"
-              width={140}
-              height={40}
-              alt="Google Play"
-              className="cursor-pointer rounded-lg hover:scale-105 transition"
-            />
-          </Link>
-        </div>
-      </section>
+  {/* HERO IMAGE + CARD OVERLAY */}
+  <div className="relative w-full flex justify-center mt-15 ">
+
+    {/* main phone image */}
+    <Image
+      src="/mobile-hero1.png"
+      width={180}
+      height={315}
+      alt="Winity App UI"
+      className="object-contain drop-shadow-2xl"
+    />
+
+    {/* overlay card image */}
+    <Image
+      src="/card-visa.png"
+      width={148}
+      height={193}
+      alt="Winity Visa Card"
+      className="
+        absolute 
+        bottom-[-15px] 
+        left-[20]
+        -translate-x-1/2
+        drop-shadow-xl
+      "
+    />
+  </div>
+
+</section>
+
     </>
   );
 }
