@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      {/* DESKTOP SECTION — video background */}
       <section className="relative hidden md:flex w-full h-[120vh] pt-20 items-center overflow-hidden">
 
         <video
@@ -44,8 +43,6 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* MOBILE SECTION — CENTERED + VIDEO HIDDEN */}
-      {/* MOBILE SECTION — CENTERED + IMAGE + OVERLAY */}
 <section
   className="
     md:hidden
@@ -63,10 +60,7 @@ export default function Hero() {
   "
 >
 
-  {/* Background gradient */}
   <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1614_0%,#0f2e2a_70%,#123b36_100%)] opacity-95 -z-10"></div>
-
-  {/* TEXT BLOCK */}
   <h1 className="text-3xl font-bold leading-snug mt-4">
     Many ways to Move,<br />One way to Pay
   </h1>
@@ -78,7 +72,6 @@ export default function Hero() {
    seamless experience.
   </p>
 
-  {/* APP STORE BUTTONS */}
   <div className="flex items-center justify-center gap-4 mt-8">
     <Link href="https://apps.apple.com/us/app/winity-life/id6752761057" target="_blank">
       <Image
@@ -101,10 +94,8 @@ export default function Hero() {
     </Link>
   </div>
 
-  {/* HERO IMAGE + CARD OVERLAY */}
   <div className="relative w-full flex justify-center mt-15 ">
 
-    {/* main phone image */}
     <Image
       src="/mobile-hero1.png"
       width={180}
@@ -113,7 +104,6 @@ export default function Hero() {
       className="object-contain drop-shadow-2xl"
     />
 
-    {/* overlay card image */}
     <Image
       src="/card-visa.png"
       width={148}

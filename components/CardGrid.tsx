@@ -21,8 +21,12 @@ export default function ChooseYourWinityCard() {
         "Priority member support via WhatsApp",
       ],
       physicalFeatures: [
-        "Add a physical card for USD 20/year (waived 6mo)",
-        "Withdraw cash at Visa®-supported ATMs globally",
+        
+         "Annual Fee: USD 0 (for instant Virtual)",
+        "Earn 1 Winity Point for every USD 10 spent",
+        "Instant Virtual Card included",
+        "Google Pay® ready (Apple Pay® coming soon)",
+        "Priority member support via WhatsApp",
       ],
       button: "Get Exclusive Card",
     },
@@ -51,8 +55,6 @@ export default function ChooseYourWinityCard() {
 
   return (
     <section className="relative w-full py-16 md:py-28 text-white">
-
-      {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/Dark-BG.jpg"
@@ -106,7 +108,7 @@ export default function ChooseYourWinityCard() {
         </div>
 
         {/* MAIN GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
 
           {/* LEFT SIDE */}
           <div>
@@ -146,27 +148,27 @@ export default function ChooseYourWinityCard() {
               <Image
                 src={data[cardType].image}
                 alt={data[cardType].title}
-                width={500}
-                height={300}
+                width={470}
+                height={290}
                 className="w-full h-auto object-cover"
               />
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="rounded-3xl bg-black/30 border border-[#3E6D61] p-6 md:p-10 text-left">
+          <div className="rounded-3xl bg-black/30 border border-[#3E6D61] p-2 md:p-8 text-left">
             <h3 className="text-2xl md:text-3xl font-extrabold">{data[cardType].title}</h3>
-            <p className="mt-3 text-gray-300 text-sm md:text-base">{data[cardType].subtitle}</p>
+            <p className="mt-1 text-gray-300 text-sm md:text-base">{data[cardType].subtitle}</p>
 
             {/* FEATURES */}
             {cardMode === "virtual" && (
-              <ul className="mt-6 space-y-6">
+              <ul className="mt-4 space-y-4">
                 {data[cardType].virtualFeatures.map((item, index) => {
                   const Icon = iconMap[index];
                   return (
                     <li key={index} className="flex gap-4 items-start">
-                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#3E6D61]/20 border border-[#3E6D61] flex items-center justify-center">
-                        <Icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                      <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-[#3E6D61]/20 border border-[#3E6D61] flex items-center justify-center">
+                        <Icon className="w-4 h-4 md:w-6 md:h-6 text-white" />
                       </div>
                       <span className="text-gray-200 text-sm md:text-lg">{item}</span>
                     </li>
