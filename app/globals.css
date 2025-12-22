@@ -98,6 +98,62 @@ html, body {
   }
 }
 
+/* ---------- SNOW EFFECT ---------- */
+
+.snow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.snow span {
+  position: absolute;
+  top: -10%;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(120vh) translateX(40px);
+  }
+}
+
+/* Different snow sizes */
+.snow span:nth-child(odd) {
+  width: 4px;
+  height: 4px;
+  opacity: 0.5;
+}
+/* Vignette */
+.vignette {
+  box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.9);
+}
+
+/* Snow animation */
+@keyframes snow {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(120vh) translateX(40px);
+  }
+}
+
+.animate-snow {
+  animation: snow linear infinite;
+}
+
+
+
 
 
 

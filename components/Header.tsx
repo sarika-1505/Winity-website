@@ -34,6 +34,7 @@ const Header: React.FC = () => {
 
     {/* CENTER — NAV LINKS */}
     <nav className="hidden md:flex items-center gap-6 text-white font-semibold text-lg">
+      <Link href="/holiday" className="hover:text-emerald-400 transition">Holiday Offers!</Link>
       <Link href="/ctasection" className="hover:text-emerald-400 transition">How it works</Link>
       <Link href="/cards" className="hover:text-emerald-400 transition">Cards</Link>
       <Link href="/loyalty" className="hover:text-emerald-400 transition">Loyalty</Link>
