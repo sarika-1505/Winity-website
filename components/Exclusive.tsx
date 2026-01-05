@@ -48,9 +48,7 @@ const Exclusive: React.FC = () => {
 
   return (
     <>
-      {/* ===== HERO SECTION ===== */}
       <section className="relative min-h-screen text-white flex px-6 md:px-16 py-20 overflow-hidden">
-        {/* Background Video */}
         <video
           autoPlay
           loop
@@ -60,8 +58,6 @@ const Exclusive: React.FC = () => {
         >
           <source src="/Winity-Card.mp4" type="video/mp4" />
         </video>
-
-        {/* Content */}
         <motion.div
           initial={{ y: 250 }}
           animate={{ y: -10 }}
@@ -86,13 +82,11 @@ const Exclusive: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* ===== TWO CARD SECTION ===== */}
       <section className="w-full bg-black text-white flex justify-center py-40">
         <div
           className="max-w-[1240px] w-full grid grid-cols-1 md:grid-cols-2 gap-10 justify-center"
           style={{ minHeight: "432.05px" }}
         >
-          {/* Virtual Card */}
           <div
             className="relative bg-[#0B1421]/90 backdrop-blur-md border border-gray-800 hover:border-gray-600 
                      rounded-2xl p-6 flex flex-col items-center text-center 
@@ -134,7 +128,7 @@ const Exclusive: React.FC = () => {
             </div>
           </div>
 
-          {/* Physical Card */}
+
           <div
             className="relative bg-[#0B1421]/90 backdrop-blur-md border border-gray-800 hover:border-gray-600 
                      rounded-2xl p-6 flex flex-col items-center text-center 
@@ -177,13 +171,13 @@ const Exclusive: React.FC = () => {
         </div>
       </section>
 
-      {/* ===== FEATURE SECTION ===== */}
+
       <section className="w-full flex justify-center items-center bg-black text-white">
         <div
           className="max-w-[1442.4px] w-full flex flex-col md:flex-row justify-between gap-2"
           style={{ minHeight: "1129.4px" }}
         >
-          {/* Left Text */}
+       
           <div
             className="flex flex-col items-start text-left md:w-[620px] w-full px-22"
             style={{ height: "189px" }}
@@ -195,7 +189,6 @@ const Exclusive: React.FC = () => {
             </h2>
           </div>
 
-          {/* Right Features */}
           <div
             className="flex flex-col justify-between md:w-[620px] w-full space-y-2"
             style={{ height: "989px" }}
@@ -226,7 +219,6 @@ const Exclusive: React.FC = () => {
         </div>
       </section>
 
-      {/* ===== EXTRA SECTIONS ===== */}
       <section>
         <ExclusiveCardSection />
       </section>

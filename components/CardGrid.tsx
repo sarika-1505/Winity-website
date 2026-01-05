@@ -66,19 +66,14 @@ export default function ChooseYourWinityCard() {
       </div>
 
       <div className="absolute inset-0 bg-black/60 -z-10"></div>
-
       <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
-
-        {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold mb-8 md:mb-10">
+        <h2 className="text-3xl md:text-5xl font-bold mb-12 md:mb-16">
           Choose Your Winity Card
         </h2>
-
-        {/* Card Type Selector */}
         <div className="flex justify-center mb-12">
-          <div className="flex bg-black/40 border border-[#3E6D61] rounded-full p-1">
+          <div className="flex bg-black/40 border border-[#3E6D61] rounded-full p-2">
             <button
-              className={`px-6 md:px-8 py-2 rounded-full transition-all text-sm md:text-base ${
+              className={`px-6 md:px-7 py-3 rounded-full transition-all text-sm md:text-base ${
                 cardType === "Exclusive"
                   ? "bg-[#3E6D61] text-white"
                   : "text-gray-300"
@@ -107,12 +102,8 @@ export default function ChooseYourWinityCard() {
           </div>
         </div>
 
-        {/* MAIN GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-
-          {/* LEFT SIDE */}
           <div>
-            {/* Virtual / Physical buttons */}
             <div className="flex flex-wrap gap-4 mb-8 justify-center md:justify-start">
               <button
                 className={`px-22 py-3 rounded-full border w-full sm:w-auto transition ${
@@ -143,7 +134,6 @@ export default function ChooseYourWinityCard() {
               </button>
             </div>
 
-            {/* Card Image */}
             <div className="rounded-3xl overflow-hidden shadow-xl bg-black/20 border border-white/10">
               <Image
                 src={data[cardType].image}
@@ -155,12 +145,10 @@ export default function ChooseYourWinityCard() {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="rounded-3xl bg-black/30 border border-[#3E6D61] p-2 md:p-8 text-left">
             <h3 className="text-2xl md:text-3xl font-extrabold">{data[cardType].title}</h3>
             <p className="mt-1 text-gray-300 text-sm md:text-base">{data[cardType].subtitle}</p>
 
-            {/* FEATURES */}
             {cardMode === "virtual" && (
               <ul className="mt-4 space-y-4">
                 {data[cardType].virtualFeatures.map((item, index) => {
@@ -199,10 +187,20 @@ export default function ChooseYourWinityCard() {
               </>
             )}
 
-            {/* CTA BUTTON */}
-            <button className="w-full mt-10 py-4 rounded-full bg-[#3E6D61] hover:bg-[#2d594f] transition text-base md:text-lg font-semibold">
-              {data[cardType].button}
-            </button>
+           <a
+  href="https://apps.apple.com/sg/app/winity-life/id6752761057"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    block w-full mt-10 py-4 rounded-full
+    bg-[#3E6D61] hover:bg-[#2d594f]
+    transition text-center
+    text-base md:text-lg font-semibold
+  "
+>
+  {data[cardType].button}
+</a>
+
           </div>
         </div>
       </div>

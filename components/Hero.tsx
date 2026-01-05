@@ -17,29 +17,76 @@ export default function Hero() {
           <source src="/Hero-video-main.mp4" type="video/mp4" />
         </video>
 
+        {/* overlay */}
+        <div className="absolute inset-0 bg-black opacity-5"></div>
+
         <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1614_0%,#0f2e2a_50%,#123b36_100%)] opacity-40"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto w-full px-8 grid grid-cols-2 gap-10">
-          <div className="flex flex-col justify-center text-white">
-            <h1 className="text-6xl font-bold leading-tight">Many ways to Move,<br/>One way to Pay</h1>
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-8 grid grid-cols-2 gap-8">
+  <div className="flex flex-col justify-center text-white">
 
-            <p className="mt-5 text-xl text-gray-300 max-w-xl leading-tight">
-              Your lifestyle, powered by Winity Life – the platform that connects
-              traditional and emerging payments through a multi-network system.
-            </p>
+    {/* Heading */}
+    <h1
+      className="
+        max-w-[555px]
+        text-[60.8px]
+        font-bold
+        leading-[1.15]
+        tracking-normal
+      "
+      style={{ fontFamily: "Roboto, sans-serif" }}
+    >
+      Many ways to Move,
+      One way to Pay
+    </h1>
 
-            <div className="flex items-center gap-6 mt-8">
-              <Link href="https://apps.apple.com/us/app/winity-life/id6752761057" target="_blank">
-                <Image src="/App-store.svg" width={150} height={44} alt="App Store"
-                  className="cursor-pointer rounded-xl hover:scale-105 transition" />
-              </Link>
+    {/* Description */}
+    <p
+      className="
+        mt-5
+        max-w-[600px]
+        text-[18px]
+        leading-[1.55]
+        text-[#BFC7C6]
+      "
+    >
+      Your lifestyle, powered by Winity Life – the platform that connects
+      traditional and emerging payments through a multi-network system. Move
+      your money your way, spend globally in USD, and earn Winity Points with
+      every tap – all through one seamless experience.
+    </p>
 
-              <Link href="https://play.google.com/store/apps/details?id=com.winity.life" target="_blank">
-                <Image src="/Google-play.svg" width={150} height={44} alt="Google Play"
-                  className="cursor-pointer rounded-xl hover:scale-105 transition" />
-              </Link>
-            </div>
-          </div>
+    {/* Store Buttons */}
+    <div className="flex items-center gap-6 mt-8">
+      <Link
+        href="https://apps.apple.com/us/app/winity-life/id6752761057"
+        target="_blank"
+      >
+        <Image
+          src="/App-store.svg"
+          width={150}
+          height={44}
+          alt="App Store"
+          className="cursor-pointer hover:scale-105 transition-transform"
+        />
+      </Link>
+
+      <Link
+        href="https://play.google.com/store/apps/details?id=com.winity.life"
+        target="_blank"
+      >
+        <Image
+          src="/Google-play.svg"
+          width={150}
+          height={44}
+          alt="Google Play"
+          className="cursor-pointer hover:scale-105 transition-transform"
+        />
+      </Link>
+    </div>
+  </div>
+
+
         </div>
       </section>
 
@@ -99,7 +146,7 @@ export default function Hero() {
     <Image
       src="/mobile-hero1.png"
       width={180}
-      height={315}
+      height={320}
       alt="Winity App UI"
       className="object-contain drop-shadow-2xl"
     />
@@ -107,11 +154,11 @@ export default function Hero() {
     <Image
       src="/card-visa.png"
       width={148}
-      height={193}
+      height={185}
       alt="Winity Visa Card"
       className="
         absolute 
-        bottom-[-15px] 
+        bottom-[-8px] 
         left-[20]
         -translate-x-1/2
         drop-shadow-xl

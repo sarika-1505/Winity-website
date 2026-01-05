@@ -33,8 +33,6 @@ export default function WinityExperiences() {
 
   return (
     <section className="w-full bg-black text-white py-24 px-6">
-
-      {/* MAIN HEADING */}
       <div className="text-center mb-14">
         <h2 className="text-4xl md:text-5xl font-bold">
           Unlock Experiences With Your Winity Points
@@ -44,70 +42,77 @@ export default function WinityExperiences() {
         </p>
       </div>
 
-      {/* 4 CARD GRID */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         
         {cards.map((card, i) => {
           const Icon = card.icon;
 
           return (
-            <div
-              key={i}
-              className="relative rounded-3xl overflow-hidden group cursor-pointer"
-            >
-              {/* Hover image effect */}
-              <Image
-                src={card.img}
-                alt={card.title}
-                width={400}
-                height={250}
-                className="
-                  w-full h-64 object-cover rounded-3xl transition-all duration-500
-                  group-hover:scale-110 group-hover:-translate-y-2
-                "
-              />
+           <div
+  key={i}
+  className="relative rounded-3xl overflow-hidden group cursor-pointer"
+>
+  {/* IMAGE */}
+  <Image
+    src={card.img}
+    alt={card.title}
+    width={400}
+    height={250}
+    className="
+      w-full h-64 object-cover
+      transition-transform duration-500
+      group-hover:scale-110
+    "
+  />
 
-              {/* Right corner icon bubble */}
-              <div
-                className="
-                  absolute top-4 right-4 
-                  w-10 h-10 rounded-full
-                  bg-black/40 backdrop-blur-md
-                  border border-white/20
-                  flex items-center justify-center
-                "
-              >
-                <Icon className="w-5 h-5 text-white" />
-              </div>
+  {/* DARK BLUR OVERLAY (NEW) */}
+  <div
+    className="
+      absolute inset-0
+      bg-gradient-to-t
+      from-black via-black/85 to-transparent
+      backdrop-blur-[0px]
+    "
+  />
 
-              {/* Gradient overlay bottom */}
-              <div
-                className="
-                  absolute bottom-0 left-0 w-full 
-                  p-5
-                  bg-gradient-to-t from-black/90 via-black/40 to-transparent
-                "
-              >
-                <h3 className="text-lg font-semibold">{card.title}</h3>
+  <div
+    className="
+      absolute top-4 right-4 z-10
+      w-12 h-12 rounded-full
+      bg-gray-700 backdrop-blur-md
+      border border-white/20
+      flex items-center justify-center
+    "
+  >
+    <Icon className="w-6 h-6 text-white" />
+  </div>
 
-                <p className="text-sm text-gray-300 mt-1">Starting from</p>
+  {/* CONTENT */}
+  <div
+    className="
+      absolute bottom-0 left-0 z-10 w-full
+      px-5 pb-5 pt-12
+    "
+  >
+    <h3 className="text-lg font-semibold">{card.title}</h3>
 
-                <p className="text-3xl font-bold mt-1">{card.points}</p>
+    <p className="text-sm text-gray-300 mt-1">Starting from</p>
 
-                <p className="text-sm text-gray-300">Winity Points</p>
-              </div>
-            </div>
+    <p className="text-3xl font-bold mt-1">{card.points}</p>
+
+    <p className="text-sm text-gray-300">Winity Points</p>
+  </div>
+</div>
+
           );
         })}
 
       </div>
 
-      {/* Small text */}
       <p className="text-center text-sm text-gray-400 mt-10">
         Images are for visual representation only. Actual rewards may vary.
       </p>
 
-      {/* CTA BUTTON */}
       <div className="flex justify-center mt-10">
   <a
     href="https://apps.apple.com/sg/app/winity-life/id6752761057"

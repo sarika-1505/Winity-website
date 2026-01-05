@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Winity from "./Winity";
 import { motion } from "framer-motion";
@@ -16,7 +17,6 @@ const AboutWinity: React.FC = () => {
           priority
         />
         <div className="absolute inset-0 flex flex-col justify-start px-30 py-65">
-          {/* Button */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: -100 }}
@@ -27,7 +27,6 @@ const AboutWinity: React.FC = () => {
             </button>
           </motion.div>
 
-          {/* Heading */}
           <motion.h1
             className="text-3xl md:text-4xl font-extrabold mb-4 drop-shadow-lg"
             initial={{ opacity: 0, y: 60 }}
@@ -37,7 +36,6 @@ const AboutWinity: React.FC = () => {
             FREEDOM IN MOTION
           </motion.h1>
 
-          {/* Paragraph */}
           <motion.p
             className="max-w-2xl text-base md:text-lg leading-relaxed"
             initial={{ opacity: 0, y: 70 }}
@@ -87,7 +85,7 @@ const AboutWinity: React.FC = () => {
       </section>
 
       <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-16 bg-black text-white">
-        {/* LEFT SIDE - IMAGE */}
+
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
           <div className="relative w-[350px] h-[250px] md:w-[456px] md:h-[456px] rounded-2xl overflow-hidden shadow-lg">
             <Image

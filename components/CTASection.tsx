@@ -46,7 +46,6 @@ export default function HowWinityWorks() {
               key={index}
               className="rounded-2xl border border-gray-100/60 bg-[#0f1f1c]/60 backdrop-blur-lg text-white shadow-xl overflow-hidden h-[520px] flex flex-col group"
             >
-              {/* TOP HALF — IMAGE */}
               <div className="relative h-1/2 w-full overflow-hidden flex items-center justify-center">
 
                 <div className="relative w-[95%] h-[95%] transition-all duration-700 group-hover:w-full group-hover:h-full">
@@ -64,8 +63,6 @@ export default function HowWinityWorks() {
                 </div>
 
               </div>
-
-              {/* BOTTOM HALF — TEXT */}
               <div className="h-1/2 flex flex-col px-4 py-3">
                 
                 <div className="w-full h-px bg-gray-100/50 mb-3"></div>

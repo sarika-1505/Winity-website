@@ -6,8 +6,6 @@ import Link from "next/link";
 export default function WinityJoinSection() {
   return (
     <section className="relative w-full h-[90vh] md:h-[100vh] overflow-hidden bg-black">
-      
-      {/* BG VIDEO */}
       <video
         autoPlay
         loop
@@ -18,10 +16,8 @@ export default function WinityJoinSection() {
         <source src="/Hero-Video-Second.mp4" type="video/mp4" />
       </video>
 
-      {/* CONTENT */}
      <div className="relative max-w-8xl mx-auto h-full flex flex-col md:flex-row items-center justify-between px-8 md:px-12">
 
-  {/* LEFT SIDE TEXT */}
   <div className="text-white max-w-3xl mt-32 md:mt-0">
     <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
       Join the Winity Life Experience

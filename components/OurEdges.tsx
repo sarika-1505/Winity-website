@@ -6,7 +6,6 @@ import React from "react";
 const OurEdge: React.FC = () => {
   return (
     <section className="relative min-h-screen text-white flex items-center justify-center px-6 md:px-16 py-20 overflow-hidden">
-      {/* 🔹 Background Video */}
       <video
         autoPlay
         loop
@@ -16,8 +15,6 @@ const OurEdge: React.FC = () => {
       >
         <source src="/Winity-Card.mp4" type="video/mp4" />
       </video>
-
-      {/* 🔹 Content */}
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -25,7 +22,7 @@ const OurEdge: React.FC = () => {
         viewport={{ once: true }}
         className="relative max-w-6xl grid md:grid-cols-2 gap-12 items-center"
       >
-        {/* LEFT SIDE - TEXT */}
+
         <div className="bg-black/40 p-8 rounded-2xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Edge</h2>
 

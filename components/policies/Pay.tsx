@@ -10,9 +10,6 @@ export default function Pay() {
       <section className="relative flex flex-col justify-center items-center text-center 
         px-4 md:px-20 h-[57vh] overflow-hidden">
       
-         
-      
-        {/* BOTTOM LAYER — abstract-white */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/abstract-white.jpg"
@@ -32,7 +29,6 @@ export default function Pay() {
             priority
           />
         </div>
-        {/*  Animated Foreground Content */}
         <motion.div
           className="relative z-10 max-w-3xl mx-auto flex flex-col items-center justify-center"
           initial={{ opacity: 0, y: 50 }}   
@@ -70,7 +66,6 @@ export default function Pay() {
           agree to Google and Apple’s policies.
           </motion.p>
 
-          
           <motion.div
             className="text-gray-400 text-xs md:text-sm mt-6"
             initial={{ opacity: 0, y: 30 }}
@@ -95,7 +90,6 @@ export default function Pay() {
         </motion.div>
       </section>
 
-      {/* ✅ CONTENT SECTION */}
       <section className="px-6 md:px-20 py-16 bg-black">
         <div className="max-w-5xl mx-auto space-y-10 text-start">
           <div>

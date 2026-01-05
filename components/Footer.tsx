@@ -35,7 +35,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* WINITY CARDS */}
             <div>
               <h3 className="text-white font-semibold mb-4 tracking-wide text-sm">WINITY CARDS</h3>
               <ul className="space-y-2 text-sm">
@@ -52,7 +51,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* MEMBER SERVICES */}
             <div>
               <h3 className="text-white font-semibold mb-4 tracking-wide text-sm">MEMBER SERVICES</h3>
               <ul className="space-y-2 text-sm">
@@ -81,18 +79,13 @@ export default function Footer() {
           Availability may vary by jurisdiction.
         </p>
 
-        {/* DIVIDER */}
         <div className="border-t border-gray-700 mt-4"></div>
-
-        {/* BOTTOM ROW */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-6 gap-6 text-sm">
 
-          {/* COPYRIGHT */}
           <div className="text-gray-100 text-center md:text-left">
             © 2025 @WTY Technology Hong Kong Limited.
           </div>
 
-          {/* LEGAL LINKS */}
           <div className="flex flex-wrap gap-6 text-gray-100 justify-center text-sm">
             <Link href="/legal/risk-disclosure" className="hover:text-emerald-500">
               Risk Disclosure
@@ -108,7 +101,6 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* SOCIAL ICONS */}
           <div className="flex gap-3 justify-center">
             {[Linkedin, Send, Instagram, Facebook, Youtube].map((Icon, i) => (
               <Link

@@ -28,7 +28,6 @@ export default function ExclusiveCardSection() {
   return (
     <section className="w-full bg-black text-white flex justify-center py-20 px-4 md:px-16">
       <div className="max-w-[1442px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* ===== LEFT IMAGE ===== */}
         <div className="flex justify-center">
           <Image
             src="/Fon.webp"
@@ -39,9 +38,7 @@ export default function ExclusiveCardSection() {
           />
         </div>
 
-        {/* ===== RIGHT CONTENT ===== */}
         <div className="flex flex-col justify-start space-y-8">
-          {/* Heading Section */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-3">EXCLUSIVE</h2>
             <p className="text-lg md:text-xl text-gray-300 font-medium">
@@ -52,7 +49,6 @@ export default function ExclusiveCardSection() {
             </p>
           </div>
 
-          {/* Feature List */}
           <div className="grid grid-cols-1 gap-6">
             {features.map((feature, index) => (
               <div

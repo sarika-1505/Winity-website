@@ -9,10 +9,6 @@ export default function Privacy() {
       
       <section className="relative flex flex-col justify-center items-center text-center 
         px-4 md:px-20 h-[57vh] overflow-hidden">
-      
-         
-      
-        {/* BOTTOM LAYER — abstract-white */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/abstract-white.jpg"
@@ -33,7 +29,6 @@ export default function Privacy() {
           />
         </div>
 
-        {/* Animated Foreground Content */}
         <motion.div
           className="relative z-10 max-w-3xl mx-auto flex flex-col items-center justify-center"
           initial={{  y: 50 }}   
@@ -72,7 +67,6 @@ export default function Privacy() {
             data usage, and compliance with applicable laws.
           </motion.p>
 
-          {/* Breadcrumb */}
           <motion.div
             className="text-gray-400 text-xs md:text-sm mt-6"
             initial={{ y: 30 }}
@@ -97,7 +91,6 @@ export default function Privacy() {
         </motion.div>
       </section>
 
-      {/* ✅ CONTENT SECTION */}
       <section className="px-6 md:px-20 py-16 bg-black">
         <div className="max-w-5xl mx-auto space-y-10 text-start">
           <div>

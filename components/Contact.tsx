@@ -12,9 +12,6 @@ export default function Contact() {
  <section className="relative flex flex-col justify-center items-center text-center 
   px-4 md:px-20 h-[57vh] overflow-hidden">
 
-   
-
-  {/* BOTTOM LAYER — abstract-white */}
   <div className="absolute inset-0 z-0">
     <Image
       src="/abstract-white.jpg"
@@ -35,8 +32,6 @@ export default function Contact() {
     />
   </div>
   
-
-  {/* FOREGROUND CONTENT */}
   <motion.div
     className="relative z-40 max-w-3xl mx-auto flex flex-col items-center justify-center"
     initial={{ y: 50 }}
@@ -86,13 +81,9 @@ export default function Contact() {
   </motion.div>
 </section>
 
-
-
-      {/* ✅ CONTENT SECTION */}
      <div className="min-h-screen bg-black text-white px-6 py-20 flex justify-center">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12">
 
-        {/* LEFT SECTION */}
         <div className="bg-[#0d1117] border border-gray-700 rounded-2xl p-10 h-fit">
           <h1 className="text-4xl font-bold mb-6">We're Here to Help</h1>
 
@@ -103,10 +94,7 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* RIGHT SECTION (FORM) */}
         <div className="bg-[#0d1117] border border-gray-700 rounded-2xl p-10">
-          
-          {/* First + Last Name */}
           <div className="grid grid-cols-2 gap-6">
             <div>
               <label className="block text-sm text-gray-300 mb-1">First Name</label>
@@ -124,7 +112,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Email */}
           <div className="mt-6">
             <label className="block text-sm text-gray-300 mb-1">
               Email Address <span className="text-red-500">*</span>
@@ -134,8 +121,6 @@ export default function Contact() {
               className="w-full px-4 py-3 rounded-lg bg-[#39665d] text-white outline-none"
             />
           </div>
-
-          {/* Message */}
           <div className="mt-6">
             <label className="block text-sm text-gray-300 mb-1">
               Message <span className="text-red-500">*</span>
@@ -146,8 +131,6 @@ export default function Contact() {
             ></textarea>
           </div>
 
-       
-         {/* REAL Google reCAPTCHA */}
 <div className="mt-8">
   <div
     className="g-recaptcha"
@@ -156,13 +139,10 @@ export default function Contact() {
 </div>
 
 
-          {/* Submit Button */}
           <button className="mt-8 bg-[#39665d] px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#2e524a] transition">
             Submit
           </button>
-
         </div>
-
       </div>
     </div>
     </main>

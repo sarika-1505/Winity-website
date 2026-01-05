@@ -9,10 +9,6 @@ export default function TermofUse() {
       
       <section className="relative flex flex-col justify-center items-center text-center 
         px-4 md:px-20 h-[57vh] overflow-hidden">
-      
-         
-      
-        {/* BOTTOM LAYER — abstract-white */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/abstract-white.jpg"
@@ -32,14 +28,12 @@ export default function TermofUse() {
             priority
           />
         </div>
-        {/* Animated Foreground */}
         <motion.div
           className="relative z-10 max-w-3xl mx-auto flex flex-col items-center justify-center"
           initial={{  y: 50 }}    
           animate={{ y: 0 }}       
           transition={{ duration: 1, ease: "easeOut" }} 
         >
-
           <h2
             className="font-extrabold mb-4 leading-tight"
             style={{
@@ -65,7 +59,6 @@ export default function TermofUse() {
             data usage, and compliance with applicable laws.
           </p>
 
-         
           <div className="text-gray-400 text-xs md:text-sm mt-6">
             <Link href="/" className="hover:text-white">
               Home
@@ -85,7 +78,6 @@ export default function TermofUse() {
         </motion.div>
       </section>
 
-      {/*CONTENT SECTION */}
       <section className="px-6 md:px-20 py-16 bg-black">
         <div className="max-w-5xl mx-auto space-y-10 text-start">
           <div>

@@ -5,7 +5,6 @@ import Winity from "./Winity";
 import Image from "next/image";
 import React from "react";
 
-// ✅ Define TypeScript interface for feature items
 interface Feature {
   title: string;
   desc: string;
@@ -48,7 +47,6 @@ interface Feature {
 
   return (
     <>
-      {/* HERO SECTION */}
       <section className="relative min-h-screen text-white overflow-hidden">
         <img
           src="Exclusive2.jpeg"
@@ -79,7 +77,6 @@ interface Feature {
         </motion.div>
       </section>
 
-      {/* CARD OPTIONS */}
       <section className="bg-black text-white py-16 px-4 md:px-12">
         <div className="flex flex-col items-center justify-center text-start">
           <h1 className="text-3xl md:text-4xl font-extrabold mb-10">
@@ -112,17 +109,14 @@ interface Feature {
         </div>
       </section>
 
-      {/* FEATURES SECTION */}
       <section className="w-full bg-black text-white py-20 px-6 md:px-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
-          {/* LEFT SIDE */}
           <div className="w-full md:w-1/2 flex justify-start items-start mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight p-10">
               THE WINITY <br /> EXECUTIVE <br /> CARD IN ACTION
             </h1>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
             {features.map((feature, idx) => (
               <div
@@ -148,9 +142,7 @@ interface Feature {
         </div>
       </section>
 
-      {/* EXECUTIVE CARD DETAILS */}
       <section className="w-full flex flex-col md:flex-row items-center justify-between py-20 px-6 md:px-20 bg-black text-white gap-12">
-        {/* Left Image */}
         <div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
           <img
             src="/Sample-Image.webp"
@@ -159,7 +151,6 @@ interface Feature {
           />
         </div>
 
-        {/* Right Content */}
         <div className="w-full md:w-1/2 flex flex-col items-start text-left">
           <h1 className="text-3xl md:text-5xl font-bold mb-2">Executive</h1>
           <h2 className="mb-10 text-lg md:text-xl">$1,000 Annual Fee</h2>
@@ -200,8 +191,7 @@ interface Feature {
           </div>
         </div>
       </section>
-
-      {/* FOOTER INFO SECTION */}
+      
       <section className="bg-black pb-24 px-4 md:px-0">
         <Winity />
         <h2 className="text-center mt-10 text-gray-100 text-sm md:text-base leading-relaxed">

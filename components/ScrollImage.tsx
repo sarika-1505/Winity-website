@@ -22,8 +22,6 @@ export default function ScrollImage() {
 
   return (
     <section className="relative w-full py-24 overflow-hidden">
-
-      {/* === BACKGROUND IMAGE === */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/Dark-BG.jpg"
@@ -33,7 +31,6 @@ export default function ScrollImage() {
         />
       </div>
 
-      {/* === CONTENT === */}
       <div className="max-w-7xl mx-auto px-6 text-center text-white">
         
         <h2 className="text-4xl md:text-5xl font-bold">
@@ -44,33 +41,29 @@ export default function ScrollImage() {
           More than a card. A lifestyle platform.
         </p>
 
-        {/* 3 CARDS */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-4">
           {cards.map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-3xl shadow-xl overflow-hidden group"
             >
-              {/* IMAGE WITH HOVER SCALE */}
-              <div className="h-56 overflow-hidden">
+              <div className="h-54 overflow-hidden">
                 <Image
                   src={item.img}
                   alt={item.title}
-                  width={600}
+                  width={300}
                   height={400}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
-              {/* CONTENT */}
               <div className="p-8 text-black">
-                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+                <h1 className="text-2xl font-bold mb-4">{item.title}</h1>
                 <p className="text-gray-700 leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

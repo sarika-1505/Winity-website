@@ -21,7 +21,7 @@ export default function WinityCardSelector() {
   };
 
   const [amount, setAmount] = useState(1000);
-  const rate = 10; // 1 point per $10 USD
+  const rate = 10; 
   const points = Math.floor(amount / rate);
 
 
@@ -37,7 +37,6 @@ export default function WinityCardSelector() {
             Loyalty That Stays With You
           </h4>
         </div>
-        {/* TOP CARD SELECTOR */}
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-center items-center gap-12">
 
           {Object.entries(cards).map(([key, card]) => {
@@ -50,7 +49,6 @@ export default function WinityCardSelector() {
                 onClick={() => setSelected(key)}
                 className="cursor-pointer flex flex-col items-center"
               >
-                {/* IMAGE WRAPPER */}
                 <div
                   className={`
                   rounded-2xl p-[1px] transition-all duration-500
@@ -60,7 +58,6 @@ export default function WinityCardSelector() {
                     }
                 `}
                 >
-                  {/* IMAGE ONLY gets hover & movement */}
                   <div className="overflow-hidden rounded-2xl">
                     <Image
                       src={card.img}
@@ -72,8 +69,6 @@ export default function WinityCardSelector() {
                     />
                   </div>
                 </div>
-
-                {/* HEADING UNDER IMAGE */}
                 <div className="mt-4 text-center">
                   <p
                     className={`font-semibold ${isSelected ? "text-emerald-400" : "text-gray-300"
@@ -95,8 +90,6 @@ export default function WinityCardSelector() {
       </section>
 
       <section className="w-full bg-black text-white py-8 px-6">
-
-        {/* MAIN GLASS CARD CONTAINER */}
         <div className="
         max-w-6xl mx-auto 
         rounded-3xl 
@@ -107,11 +100,7 @@ export default function WinityCardSelector() {
         backdrop-blur-xl
       ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
-
-            {/* LEFT SIDE — SLIDER */}
             <div className="space-y-8">
-
-              {/* Header */}
               <div className="flex items-center gap-4">
                 <div className="
                 w-14 h-14 rounded-xl 
@@ -126,10 +115,8 @@ export default function WinityCardSelector() {
                 <h2 className="text-3xl font-bold">Calculate Your Earnings</h2>
               </div>
 
-              {/* Slider Label */}
               <p className="text-lg font-bold opacity-80">Amount You Spend (USD)</p>
 
-              {/* Slider */}
               <input
                 type="range"
                 min={100}
@@ -145,7 +132,6 @@ export default function WinityCardSelector() {
                 <span>$10,000</span>
               </div>
 
-              {/* YOU SPEND BOX */}
               <div className="
               p-6 rounded-2xl 
               bg-[#0b1e1a]/60 
@@ -160,7 +146,6 @@ export default function WinityCardSelector() {
 
             </div>
 
-            {/* RIGHT SIDE — POINTS */}
             <div className="
             rounded-3xl 
             bg-[#0c231f]/50 
@@ -169,7 +154,6 @@ export default function WinityCardSelector() {
             flex flex-col items-center justify-center 
             text-center
           ">
-              {/* Icon */}
               <div
                 className="flex items-center justify-center mb-4">
                 <Coins className="h-12 w-12 text-emerald-300 spin-slow" />
@@ -183,7 +167,6 @@ export default function WinityCardSelector() {
 
               <p className="text-xl mt-1">Winity Points</p>
 
-              {/* Rate Badge */}
               <div className="
               mt-5 px-5 py-1 
               rounded-full 
